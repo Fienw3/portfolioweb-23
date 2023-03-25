@@ -22,6 +22,11 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+
+/* BD Supper adobe-font import */
+@import url("https://use.typekit.net/vyo8bsa.css");
+
+
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -84,3 +89,4 @@ nav a:first-of-type {
   }
 }
 </style>
+
