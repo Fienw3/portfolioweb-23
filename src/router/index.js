@@ -30,6 +30,12 @@ const router = createRouter({
       name: 'portfoliodetails',
       component: () => import('../views/PortfolioDetail.vue'),
       props: true
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: () => import('../views/ContactView.vue'),
+      props: true
     }
   ]
 })

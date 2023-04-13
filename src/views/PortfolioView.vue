@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <template>
   <div>
      <!-- {{ state }} -->
@@ -26,8 +30,18 @@ const { state } = portfoliodb()
 
 <style scoped>
 
+@media (min-width: 1024px) {
+  .portfolio {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 42px;
+  }
+}
+
 .portfolio-item-container {
   display: flex;
+  padding: 42px;
 }
 
 .portfolio-item {
