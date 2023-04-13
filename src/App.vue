@@ -18,13 +18,28 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/portfolio">Portfolio</RouterLink>
         <a href="www.linkedin.com/in/anne-sofienwalz"><img src="../src/assets/Linkedin.png" alt="" class="linkedinicon"></a>
         
-        <button><RouterLink class="contact-btn" to="/contact">Contact me</RouterLink></button>
+        <button class="contact-btn">Contact me</button>
 
       </nav>
     </div>
   </header>
 
   <RouterView />
+
+
+  <!--Modal opened-->
+  <div class="modal-ovelay">
+  <div class="contact-modal">
+    <button href="../src/assets/close_icon.png" class="close-btn"></button>
+    <h3 class="modal-text">
+      Contact me:
+      LinkedIn: www.linkedin.com/in/anne-sofienwalz
+      Email: annwal01@easv365.dk
+      or fiewalz@gmail.com
+    </h3>
+  </div>
+</div>
+
 </template>
 
 <style scoped>
@@ -83,6 +98,53 @@ nav a:first-of-type {
   color: black;
 }
 
+/* Modal css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  visibility: hidden;
+  z-index: -10;
+}
+/* OPEN/CLOSE MODAL */
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.contact-modal {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  width: 90vw;
+  height: 30vh;
+  max-width: var(--fixed-width);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-red-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.close-btn:hover {
+  color: var(--clr-red-light);
+  transform: scale(1.3);
+}
+
 
 @media (min-width: 1024px) {
 
@@ -103,3 +165,16 @@ nav a:first-of-type {
 }
 </style>
 
+<script>
+const modalBtn = document.querySelector('.contact-btn');
+const modalOverlay = document.querySelector('.modal-overlay');
+const closeBtn = document.querySelector('.close-btn');
+
+modalBtn.addEventListener('click', function() {
+   modalOverlay.classList.add("open-modal")
+})
+
+closeBtn.addEventListener('click', function() {
+    modalOverlay.classList.remove("open-modal")
+ })
+</script>
