@@ -62,12 +62,14 @@ const portfolioDetails = computed(
 }
 
 .Web {
-    color: rgb(98, 23, 168);
-    border-left: 1px solid rgb(98, 23, 168);
+  color: var(--pink-color);
+  border-left: 1px solid var(--pink-color);
+  padding-left: 3px;
 }
 
 .Video {
-    color: rgb(18, 150, 60);
-    border-left: 1px solid rgb(18, 150, 60);
+  color: var(--yellow-color);
+  border-left: 1px solid var(--yellow-color);
+  padding-left: 3px;
 }
 </style>
