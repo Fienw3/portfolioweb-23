@@ -15,6 +15,7 @@
     <button class="photo-btn">Photos</button>
     <button class="graphic-btn">Graphic Design</button>
     <button class="ui/ux-btn">UI/UX</button>
+    <button class="other-btn">Other</button>
 
   </div>
 
@@ -42,7 +43,6 @@ const { state } = portfoliodb()
 </script>
 
 
-let 
 
 <style scoped>
 
@@ -51,7 +51,7 @@ let
   div h2 {
     font-family: "bd-supper", sans-serif;
     font-size: 30px;
-    padding: 42px 42px 10px 42px;
+    padding: 75px 42px 10px 42px;
     text-align: center;
     color: #020202;
   }

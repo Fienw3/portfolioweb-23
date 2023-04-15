@@ -89,6 +89,10 @@ nav a img {
   height: 30px;
 }
 
+nav a img:hover {
+  transform: scale(1.1);
+}
+
 .contact-box {
   display: flex;
 }
