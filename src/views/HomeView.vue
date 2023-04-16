@@ -5,7 +5,9 @@
 <template>
 <div class="home">
 
+  <div class="home-container1">
   <div class="home-about lg:w-3/5">
+    
     <h2>Hi! My name is  Anne-Sofie, <br>
       and welcome to my creative universe.</h2>
       <p>At vero eos et accusamus et iusto odio 
@@ -22,18 +24,19 @@ optio cumque nihil impedit quo minus id quod
 maxime placeat facere possimus, omnis voluptas assu
 menda est, omnis dolor repellendus.</p>
 
+
 <div class="aboutme-box columns-2">
         <button class="aboutme-btn">Read more about me here!</button>
         <a href="http://" download>Download CV</a>
         </div>
+
+</div>
+
+  <div class="home-portrait lg:w-2/5 justify-end">
+      <img src="../assets/Portraitforweb.jpg" alt="Portrait of Anne-Sofie">
   </div>
 
-
-  <div class="home-portrait lg:w-2/5">
-<!--pic of me-->
-  </div>
-
-<div></div>
+</div>
 
 
 </div>
@@ -46,7 +49,11 @@ menda est, omnis dolor repellendus.</p>
     min-height: 100vh;
     display: flex-start;
     align-items: center;
-    padding: 72px 42px;
+    padding: 72px 125px;
+  }
+
+  .home-container1 {
+    display: flex;
   }
 
   div h2 {

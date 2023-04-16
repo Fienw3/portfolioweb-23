@@ -4,6 +4,7 @@
 
 <template>
 
+
   <div class="portfolio-header">
     <h2>Anne-Sofie's Portfolio</h2>
   </div>
@@ -60,14 +61,13 @@ const { state } = portfoliodb()
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 42px;
   }
 }
 
 .category-boxes {
   display: inline-flex;
-  justify-content: space-between;
-  padding: 45px 42px 0px 42px;
+  justify-content: space-evenly;
+  padding: 45px 125px 0px 125px;
 }
 
 div button {
@@ -85,7 +85,7 @@ div button {
 .portfolio-item-container {
   display: flex;
   justify-content: space-between;
-  padding: 42px;
+  padding: 42px 125px;
 }
 
 .portfolio-item {

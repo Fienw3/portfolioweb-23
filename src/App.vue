@@ -14,18 +14,18 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <nav>
 
-        <div class="nav-sitelinks columns-5">
+        <div class="nav-sitelinks lg:w-2/5">
         <RouterLink class="home-navlink" to="/">Home</RouterLink>
         <RouterLink class="about-navlink" to="/about">About Me</RouterLink>
         <RouterLink class="portfolio-navlink" to="/portfolio">Portfolio</RouterLink>
         </div>      
 
-        <div class="logo-name columns-5">
+        <div class="logo-name lg:w-2/5">
           <h3>Anne-Sofie Walz</h3>
         </div>
        
-        <div class="contact-box columns-1">
-          <a class="linkedinicon columns-1" href="https://www.linkedin.com/in/anne-sofienwalz"><img src="../src/assets/Linkedin.png" alt="LinkedIn icon that takes you to my profile"></a>
+        <div class="contact-box lg:w-1/5">
+          <a class="linkedinicon" href="https://www.linkedin.com/in/anne-sofienwalz"><img src="../src/assets/Linkedin.png" alt="LinkedIn icon that takes you to my profile"></a>
         <button class="contact-btn">Contact me</button>
         </div>
       </nav>
@@ -95,6 +95,7 @@ nav a img:hover {
 
 .contact-box {
   display: flex;
+  justify-content: right;
 }
 
 .contact-btn {
@@ -134,7 +135,7 @@ nav a img:hover {
     position: sticky;
     background-color: #F2f2f2;
     box-shadow: 0px 0px 3px 0px;
-    padding: 0px 43px 0px 43px;
+    padding: 0px 125px 0px 125px;
   }
 
   nav {
