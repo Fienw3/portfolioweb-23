@@ -1,16 +1,21 @@
 <template>
-    <div>
-        Details
-        test: {{ id }}
+
+    <div class="detail">
+
         <button @click="goBack()">Back</button>
         
         <div v-if="portfolioDetails" class="portfolioDetails">
+           <div class="portfolio-info">
             <p class="p-category" :class="portfolioDetails.category">{{ portfolioDetails.category }}</p>
-            <h4>{{ portfolioDetails.title }}</h4>
+            <h2>{{ portfolioDetails.title }}</h2>
             <p>{{ portfolioDetails.description }}</p>
             <a :href="portfolioDetails.link">LinkedIn</a>
-            <img :src="portfolioDetails.image" alt="">
             <span>{{ portfolioDetails.teammembers }}</span>
+        </div> 
+        <div class="portfolio-img">
+            <img :src="portfolioDetails.image" alt="">
+
+        </div>
        </div>
        
        <div v-else>...loading</div>
@@ -46,6 +51,26 @@ const portfolioDetails = computed(
 </script>
 
 <style scoped>
+
+.detail{
+    min-height: 100vh;
+    display: flex-start;
+    align-items: center;
+    padding: 72px 125px;
+}
+
+div button {
+  width: 85px;
+  border-width: 2px 3px 4px 2px;
+  border-radius: 7px;
+  border-color: black;
+  background: rgb(222,244,253);
+  background: linear-gradient(356deg, rgba(222,244,253,1) 34%, rgba(249,99,124,0.8661589635854342) 100%, rgba(242,242,242,1) 100%);
+  color: black;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .portfolio-item-container {
     display: flex;
 }

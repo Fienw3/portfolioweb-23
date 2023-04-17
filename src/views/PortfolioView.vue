@@ -16,7 +16,6 @@
     <button class="photo-btn">Photos</button>
     <button class="graphic-btn">Graphic Design</button>
     <button class="ui/ux-btn">UI/UX</button>
-    <button class="other-btn">Other</button>
 
   </div>
 
@@ -84,15 +83,18 @@ div button {
 
 .portfolio-item-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 42px 125px;
 }
 
 .portfolio-item {
+  min-width: 250px;
   border-width: 2px 3px 4px 2px;
   border-radius: 10px;
   border-color: black;
-  padding: 20px;
+  padding: 12px;
+  margin-bottom: 35px;
   display: flex;
   flex-direction: column;
 }

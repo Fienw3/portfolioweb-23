@@ -7,7 +7,7 @@ const getPortfolio = () => {
             title: 'Portfolio 1',
             description: 'Lorem ipsum dolor sit amet',
             image: 'https://picsum.photos/200/200',
-            link: 'https://google.com',
+            links: 'https://google.com',
             category: 'Web',
             tech: 'Vue, Tailwind, Firebase',
             teammembers: ["Alberte", "Dream"]
