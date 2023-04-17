@@ -3,8 +3,6 @@ import { RouterLink, RouterView } from 'vue-router'
 
 </script>
 
-
-
 <template>
 
   <header>
@@ -26,18 +24,26 @@ import { RouterLink, RouterView } from 'vue-router'
        
         <div class="contact-box lg:w-1/5">
           <a class="linkedinicon" href="https://www.linkedin.com/in/anne-sofienwalz"><img src="../src/assets/Linkedin.png" alt="LinkedIn icon that takes you to my profile"></a>
-        <button class="contact-btn">Contact me</button>
+        
+          <div id="contact" class="modal-vue">
+          <button class="contact-btn">Contact me</button>
+
         </div>
+      </div>
       </nav>
 
     </div>
 
+    
 
   </header>
 
   <RouterView />
 
 </template>
+
+
+
 
 <style scoped>
 
@@ -99,7 +105,7 @@ nav a img:hover {
 }
 
 .contact-btn {
-  width: 105px;
+  width: 110px;
   border-width: 2px 3px 4px 2px;
   border-radius: 10px;
   border-color: black;
@@ -141,8 +147,9 @@ nav a img:hover {
   nav {
     text-align: left;
     font-size: 1rem;
-    padding: 1rem 0;
+    padding: 30px 0px 20px 0px;
   }
+
 }
 </style>
 

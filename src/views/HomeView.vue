@@ -27,9 +27,8 @@ menda est, omnis dolor repellendus.</p>
 
 <div class="aboutme-box columns-2">
         <button class="aboutme-btn">Read more about me here!</button>
-        <a href="http://" download>Download CV</a>
+        <a class="font-bold" href="http://" download>Download CV</a>
         </div>
-
 </div>
 
   <div class="home-portrait lg:w-2/5 justify-end">
@@ -38,9 +37,24 @@ menda est, omnis dolor repellendus.</p>
 
 </div>
 
+<div class="home-container2 text-center">
+<h2>Featured works</h2>
+<div class="featured-works">
+
+
+</div>
+
+</div>
+
 
 </div>
 </template>
+
+<script setup>
+import portfoliodb from '../modules/portfoliodb'
+
+const { state } = portfoliodb()
+</script>
 
 
 <style>
@@ -86,6 +100,10 @@ menda est, omnis dolor repellendus.</p>
 
 .aboutme-btn:hover {
   transform: scale(1.1);
+}
+
+.home-container2{
+  padding: 100px 0px;
 }
 
 }
