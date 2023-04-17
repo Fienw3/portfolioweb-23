@@ -79,8 +79,8 @@ div button {
   color: black;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
-
 }
+
 .portfolio-item-container {
   display: flex;
   flex-wrap: wrap;
