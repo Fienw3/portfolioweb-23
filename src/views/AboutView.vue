@@ -56,6 +56,8 @@
 </template>
 
 <style>
+
+
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
@@ -88,6 +90,22 @@
   border-color: black;
   background: rgb(222,244,253);
   background: linear-gradient(356deg, rgba(222,244,253,1) 34%, rgba(249,99,124,0.8661589635854342) 100%, rgba(242,242,242,1) 100%);
+  margin-right: 20px;
+}
+
+.download-cv:hover {
+  transform: scale(1.1);
+}
+
+.download-cv {
+  margin: 20px 0px 40px 0px;
+  width: 125px;
+  border-width: 2px 3px 4px 2px;
+  border-radius: 10px;
+  border-color: black;
+  background-image: url(../assets/mesh-gradient.jpg);
+  /* background: rgb(222,244,253);
+  background: linear-gradient(356deg, rgba(222,244,253,1) 34%, rgba(249,99,124,0.8661589635854342) 100%, rgba(242,242,242,1) 100%); */
   margin-right: 20px;
 }
 
