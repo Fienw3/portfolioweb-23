@@ -5,10 +5,10 @@
 <template>
   <div class="about">
 
-  <div class="about-container1">
+  <div class="about-container1 sm:flex-wrap">
 
     
-    <div class="about-general lg:w-3/5">
+    <div class="about-general lg:w-3/5 md:w-3/5 sm:w-full">
     <h2>Hi im Anne-Sofie, <br> and this is everything about me.</h2>
     <h3>General information</h3>
     <p>At vero eos et accusamus et iusto odio 
@@ -28,14 +28,14 @@
       <button class="download-cv font-bold" href="http://" alt= "download button for cv" download>Download CV</button>
     </div>
 
-    <div class="about-photo lg:w-2/5">
+    <div class="about-photo lg:w-2/5 md:w-2/5 sm:w-full">
       <img class="portrait" src="../assets/Portraitforweb.jpg" alt="Portrait of Anne-Sofie">
 
     </div> 
 
   </div>
 
-    <div class="passionsnfuture">
+    <div class="passionsnfuture w-full">
       <h3>Passions and future</h3>
         <p>em ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a cras semper. Vitae semper quis lectus nulla at volutpat diam ut. Ultricies leo integer malesuada nunc vel. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Cras sed felis eget velit aliquet. Felis eget velit aliquet sagittis id consectetur purus ut. Risus sed vulputate odio ut enim blandit. 
             Eu non diam phasellus vestibulum. Ac tincidunt vitae semper quis lectus nulla at. '
@@ -46,7 +46,7 @@
 
             Elit pellentesque habitant morbi tristique. A cras semper auctor neque vitae tempus quam pellentesque nec. Purus sit amet volutpat consequat mauris nunc congue nisi. Odio facilisis mauris sit amet massa. Nibh tellus molestie nunc non. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget. Eget mi proin sed libero enim sed faucibus. In fermentum et sollicitudin ac orci. Arcu ac tortor dignissim convallis.</p>
     
-            <iframe class="videocv" width="720" height="415"
+            <iframe class="videocv" max-width="920" max-height="615"
             src="https://www.youtube.com/embed/k3OH_uXeImo">
             </iframe>
     
@@ -56,12 +56,10 @@
 </template>
 
 <style>
-@media (min-width: 1024px) {
   .about {
     min-height: 100vh;
-    align-items: center;
-    padding: 72px 125px;
-    align-items: flex-start;
+    display: flex-start;
+    padding: 3rem 6rem;
   }
 
   .about-container1 {
@@ -72,23 +70,32 @@
     font-family: "bd-supper", sans-serif;
     font-size: 30px;
     color: #020202;
+    font-size: 2rem;
+  }
+
+  div p {
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #020202;
   }
 
   .about h3 {
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "bd-supper", sans-serif;
     padding-top: 32px;
+    font-size: 1rem;
   }
 
   .download-cv {
-  margin: 20px 0px 40px 0px;
-  width: 125px;
+  margin: 0.625rem 0px 1rem 0px;
+  max-width: 255px;
+  padding: 0.1rem 0.3rem;
+  font-family: 'Courier New', Courier, monospace;
   border-width: 2px 3px 4px 2px;
   border-radius: 10px;
   border-color: black;
   background: rgb(222,244,253);
   background: linear-gradient(356deg, rgba(222,244,253,1) 34%, rgba(249,99,124,0.8661589635854342) 100%, rgba(242,242,242,1) 100%);
-  margin-right: 20px;
 }
 
 .download-cv:hover {
@@ -99,5 +106,4 @@
   padding-top: 40px;
 }
 
-}
 </style>

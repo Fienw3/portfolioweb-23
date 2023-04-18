@@ -5,12 +5,12 @@
 <template>
 <div class="home">
 
-  <div class="home-container1">
-  <div class="home-about lg:w-3/5">
+  <div class="home-container1 sm:flex-wrap">
+  <div class="home-about lg:w-3/5 md:w-3/5 sm:w-full">
     
     <h2>Hi! My name is  Anne-Sofie, <br>
       and welcome to my creative universe.</h2>
-      <p>At vero eos et accusamus et iusto odio 
+      <p class="about-home">At vero eos et accusamus et iusto odio 
 dignissimos ducimus qui blanditiis praesentium 
 voluptatum deleniti atque corrupti quos dolores 
 et quas molestias excepturi sint occaecati 
@@ -31,8 +31,8 @@ menda est, omnis dolor repellendus.</p>
         </div>
 </div>
 
-  <div class="home-portrait lg:w-2/5 justify-end">
-      <img src="../assets/Portraitforweb.jpg" alt="Portrait of Anne-Sofie">
+  <div class="home-portrait lg:w-2/5 md:w-2/5 sm:w-full">
+      <img class="portrait" src="../assets/Portraitforweb.jpg" alt="Portrait of Anne-Sofie">
   </div>
 
 </div>
@@ -58,12 +58,11 @@ const { state } = portfoliodb()
 
 
 <style>
-@media (min-width: 1024px) {
+
   .home {
     min-height: 100vh;
     display: flex-start;
-    align-items: center;
-    padding: 72px 125px;
+    padding: 3rem 6rem;
   }
 
   .home-container1 {
@@ -72,12 +71,14 @@ const { state } = portfoliodb()
 
   div h2 {
     font-family: "bd-supper", sans-serif;
-    font-size: 30px;
     color: #020202;
+    font-size: 2rem;
   }
 
-  div p {
+  .about-home {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #020202;
   }
 
   .aboutme-box {
@@ -86,26 +87,29 @@ const { state } = portfoliodb()
   font-weight: bold;
   color: black;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
   }
 
   .aboutme-btn {
-  width: 250px;
+  max-width: 255px;
+  padding: 0.1rem;
   border-width: 2px 3px 4px 2px;
   border-radius: 10px;
   border-color: black;
   background: rgb(222,244,253);
   background: linear-gradient(356deg, rgba(222,244,253,1) 34%, rgba(249,99,124,0.8661589635854342) 100%, rgba(242,242,242,1) 100%);
-  margin-right: 20px;
+  margin-right: 1rem; 
 }
 
 .aboutme-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
-.home-container2{
-  padding: 100px 0px;
+.portrait {
+  align-self: flex-end;
+  max-height: 150px;
+  width: auto;
 }
 
-}
 </style>
 

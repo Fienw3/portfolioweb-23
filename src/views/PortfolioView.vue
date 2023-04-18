@@ -3,18 +3,18 @@
 </script>
 
 <template>
-
+  <div class="portfolio">
 
   <div class="portfolio-header">
     <h2>Anne-Sofie's Portfolio</h2>
   </div>
 
-  <div class="category-boxes">
+  <div class="category-boxes sm:flex-wrap">
 
     <button class="web-btn">Web</button>
     <button class="video-btn">Video</button>
     <button class="photo-btn">Photos</button>
-    <button class="graphic-btn">Graphic Design</button>
+    <button class="design-btn">Design</button>
     <button class="ui/ux-btn">UI/UX</button>
 
   </div>
@@ -34,6 +34,9 @@
       </div>
 
   </div>
+
+</div>
+
 </template>
 
 <script setup>
@@ -46,57 +49,62 @@ const { state } = portfoliodb()
 
 <style scoped>
 
-@media (min-width: 1024px) {
+  .portfolio {
+    min-height: 100vh;
+    display: flex-start;
+    padding: 3rem 6rem;
+  }
  
   div h2 {
     font-family: "bd-supper", sans-serif;
-    font-size: 30px;
-    padding: 75px 42px 10px 42px;
+    color: #020202;
+    font-size: 2rem;
     text-align: center;
     color: #020202;
   }
- 
-  .portfolio {
-    min-height: 100vh;
+
+  .category-boxes {
+    padding: 1rem 0px;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
   }
-}
-
-.category-boxes {
-  display: inline-flex;
-  justify-content: space-evenly;
-  padding: 45px 125px 0px 125px;
-}
-
+  
 div button {
-  width: 150px;
+  width: 9.375rem;
+  max-height: 32px;
+  font-size: 1rem;
   border-width: 2px 3px 4px 2px;
-  border-radius: 7px;
+  border-radius: 10px;
   border-color: black;
   background: rgb(222,244,253);
   background: linear-gradient(356deg, rgba(222,244,253,1) 34%, rgba(249,99,124,0.8661589635854342) 100%, rgba(242,242,242,1) 100%);
   color: black;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
+  padding: 0.1px 0.19rem;
+  margin-bottom: 1rem;
+}
+
+div img {
+  align-self: center;
+  margin-bottom: 0.5rem;
 }
 
 .portfolio-item-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 42px 125px;
+  justify-content: space-around;
+
 }
 
 .portfolio-item {
-  min-width: 250px;
+  width: 9.375rem;
   border-width: 2px 3px 4px 2px;
   border-radius: 10px;
   border-color: black;
   padding: 12px;
   margin-bottom: 35px;
-  display: flex;
-  flex-direction: column;
+  
 }
 
 .p-category {

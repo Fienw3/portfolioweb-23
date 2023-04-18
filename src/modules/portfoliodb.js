@@ -6,10 +6,11 @@ const getPortfolio = () => {
             id: 1,
             title: 'Portfolio 1',
             description: 'Lorem ipsum dolor sit amet',
-            image: 'https://picsum.photos/200/200',
+            image: 'https://picsum.photos/150/150',
             links: 'https://google.com',
             category: 'Web',
             tech: 'Vue, Tailwind, Firebase',
+            date: "",
             teammembers: ["Alberte", "Dream"]
 
         },
@@ -17,10 +18,12 @@ const getPortfolio = () => {
             id: 2,
             title: 'Portfolio 2',
             description: 'Lorem ipsum dolor sit amet',
-            image: 'https://picsum.photos/200/200',
+            image: 'https://picsum.photos/150/150',
             link: 'https://google.com',
             category: 'Video',
-            tech: 'Adobe aftereffects, Premiere pro'
+            tech: 'Adobe aftereffects, Premiere pro',
+            date: "",
+            teammembers: ["Alberte", "Dream"]
 
         },
 
@@ -28,20 +31,24 @@ const getPortfolio = () => {
             id: 3,
             title: 'Portfolio 3',
             description: 'Lorem ipsum dolor sit amet',
-            image: 'https://picsum.photos/200/200',
+            image: 'https://picsum.photos/150/150',
             link: 'https://google.com',
             category: 'Video',
-            tech: 'Adobe aftereffects, Premiere pro'
+            tech: 'Adobe aftereffects, Premiere pro',
+            date: "",
+            teammembers: ["Alberte", "Dream"]
 
         },
         {
             id: 4,
             title: 'Portfolio 4',
             description: 'Lorem ipsum dolor sit amet',
-            image: 'https://picsum.photos/200/200',
+            image: 'https://picsum.photos/150/150',
             link: 'https://google.com',
             category: 'Web',
-            tech: 'Vue, Tailwind, Firebase'
+            tech: 'Vue, Tailwind, Firebase',
+            date: "",
+            teammembers: ["Alberte", "Dream"]
 
         },
 
@@ -49,10 +56,12 @@ const getPortfolio = () => {
             id: 4,
             title: 'Portfolio 4',
             description: 'Lorem ipsum dolor sit amet',
-            image: 'https://picsum.photos/200/200',
+            image: 'https://picsum.photos/150/150',
             link: 'https://google.com',
             category: 'Web',
-            tech: 'Vue, Tailwind, Firebase'
+            tech: 'Vue, Tailwind, Firebase',
+            date: "",
+            teammembers: ["Alberte", "Dream"]
 
         },
     ])

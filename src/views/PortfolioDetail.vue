@@ -56,7 +56,7 @@ const portfolioDetails = computed(
     min-height: 100vh;
     display: flex-start;
     align-items: center;
-    padding: 72px 125px;
+    padding: 3rem 1.875rem;
 }
 
 div button {
