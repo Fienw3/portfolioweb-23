@@ -26,7 +26,7 @@ menda est, omnis dolor repellendus.</p>
 
 
 <div class="aboutme-box columns-2">
-        <button class="aboutme-btn">Read more about me here!</button>
+        <button class="aboutme-btn" src="../views/AboutView.vue">Read more about me here!</button>
         <a class="font-bold" href="http://" download>Download CV</a>
         </div>
 </div>
@@ -96,8 +96,14 @@ const { state } = portfoliodb()
   border-width: 2px 3px 4px 2px;
   border-radius: 10px;
   border-color: black;
-  background: rgb(222,244,253);
-  background: linear-gradient(356deg, rgba(222,244,253,1) 34%, rgba(249,99,124,0.8661589635854342) 100%, rgba(242,242,242,1) 100%);
+  background-color:hsla(339,0%,100%,1);
+  background-image:
+  radial-gradient(at 24% 54%, hsla(33,95%,67%,1) 0px, transparent 50%),
+  radial-gradient(at 2% 46%, hsla(187,89%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 84% 95%, hsla(344,82%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 84% 21%, hsla(187,88%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 37% 9%, hsla(344,82%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 15% 85%, hsla(187,88%,74%,1) 0px, transparent 50%);
   margin-right: 1rem; 
 }
 

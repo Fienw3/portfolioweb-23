@@ -66,7 +66,7 @@ const { state } = portfoliodb()
   .category-boxes {
     padding: 1rem 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
 div button {
@@ -76,8 +76,14 @@ div button {
   border-width: 2px 3px 4px 2px;
   border-radius: 10px;
   border-color: black;
-  background: rgb(222,244,253);
-  background: linear-gradient(356deg, rgba(222,244,253,1) 34%, rgba(249,99,124,0.8661589635854342) 100%, rgba(242,242,242,1) 100%);
+  background-color:hsla(339,0%,100%,1);
+  background-image:
+  radial-gradient(at 24% 54%, hsla(33,95%,67%,1) 0px, transparent 50%),
+  radial-gradient(at 2% 46%, hsla(187,89%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 84% 95%, hsla(344,82%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 84% 21%, hsla(187,88%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 37% 9%, hsla(344,82%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 15% 85%, hsla(187,88%,74%,1) 0px, transparent 50%);
   color: black;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
@@ -98,7 +104,7 @@ div img {
 }
 
 .portfolio-item {
-  width: 9.375rem;
+  width: 14rem;
   border-width: 2px 3px 4px 2px;
   border-radius: 10px;
   border-color: black;
