@@ -38,7 +38,53 @@ import { RouterLink, RouterView } from 'vue-router'
 
   </header>
 
-  <RouterView />
+  <body>
+    
+    <RouterView />
+
+  <footer>
+
+    <div class="footer-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="0000000" fill-opacity="0" d="M0,224L48,218.7C96,213,192,203,288,186.7C384,171,480,149,576,160C672,171,768,213,864,218.7C960,224,1056,192,1152,170.7C1248,149,1344,139,1392,133.3L1440,128L1440"></path>
+      </svg>
+
+
+      <div class="footer-grid-container">
+      <div class="footer-grid grid-cols-4">
+        <div class="col-1">
+          <h3>Contact me</h3>
+          <p>+45 30742921 <br>
+              annwal01@easv365.dk<br>
+              fiewal@yahoo.dk<br>
+          </p>
+        </div>
+        <div class="col-2">
+          <h3>Location</h3>
+          <p> Esbjerg, <br> 
+              Denmark 
+          </p>
+        </div>
+        <div class="col-3">
+          <h3>Socials</h3>
+          <a class="underline" href="https://www.linkedin.com/in/anne-sofienwalz">LinkedIn</a>
+        </div>
+        <div class="col-4">
+          <h3>Navigate</h3>
+          <RouterLink class="home-navlink" to="/">Home</RouterLink><br>
+          <RouterLink class="about-navlink" to="/about">About Me</RouterLink><br>
+          <RouterLink class="portfolio-navlink" to="/portfolio">Portfolio</RouterLink>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  </footer>
+
+  </body>
+
+  
 
 </template>
 
@@ -140,6 +186,35 @@ nav a img:hover {
   padding: 0.0625px 0.19rem;
 }
 
+/*Footer*/
+
+.footer-wrapper {
+  height: 25rem;
+}
+
+path {
+  stroke: #000000;
+  stroke-width: 3px;
+}
+
+.footer-grid-container {
+padding: 0px 6rem 3rem 6rem;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-grid h3{
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+}
+.footer-grid p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+}
 
 </style>
 

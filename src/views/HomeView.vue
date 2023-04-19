@@ -19,7 +19,7 @@
 
 
 <div class="aboutme-box columns-2">
-        <button class="aboutme-btn" src="../views/AboutView.vue">Read more about me here!</button>
+        <RouterLink class="aboutme-btn font-bold" to="/about">Read more about me here!</RouterLink><br>
         <a class="font-bold" href="http://" download>Download CV</a>
         </div>
 </div>
