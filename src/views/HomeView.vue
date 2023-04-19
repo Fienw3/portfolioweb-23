@@ -10,19 +10,12 @@
     
     <h2>Hi! My name is  Anne-Sofie, <br>
       and welcome to my creative universe.</h2>
-      <p class="about-home">At vero eos et accusamus et iusto odio 
-dignissimos ducimus qui blanditiis praesentium 
-voluptatum deleniti atque corrupti quos dolores 
-et quas molestias excepturi sint occaecati 
-cupiditate non provident, similique sunt in culpa 
-qui officia deserunt mollitia animi, id est laborum 
-et dolorum fuga. 
-Et harum quidem rerum facilis est et expedita 
-distinctio. 
-Nam libero tempore, cum soluta nobis est eligendi 
-optio cumque nihil impedit quo minus id quod 
-maxime placeat facere possimus, omnis voluptas assu
-menda est, omnis dolor repellendus.</p>
+      <p class="about-home">‘Out of the box’ thinking multimedia design student, with a passion for content creation and front-end development.
+        <br>
+        <br>
+      I am passionate about the creative process from idea to the finished product, with a detail oriented and striving personality I strive for a good final product. I am always curious about the world around me. <br>
+
+      In the future i want to work in one of these areas, an forever better my skills: ux/ui design, grafic design and web development.</p>
 
 
 <div class="aboutme-box columns-2">
@@ -37,23 +30,42 @@ menda est, omnis dolor repellendus.</p>
 
 </div>
 
-<div class="home-container2 text-center">
-<h2>Featured works</h2>
-<div class="featured-works">
-
-
+<div class="home-container2 text-center md:flex-wrap-reverse sm:flex-wrap-reverse">
+<div class="skill-text lg:w-2/5 md:w-full sm:w-full text-justify">
+  <h2>Graphic Design ★ User experience ★ Wep development ★ Graphic faciliation ★ Videography ★ Photography ★ UI design ★ Illustrations </h2>
+</div>
+<div class="skills-pic lg:w-3/5 md:w-full sm:w-full">
+  <img width="700" height="500" src="../assets/skillsnpassions.png" alt="Characters representing skills and passions">
+</div>
 </div>
 
-</div>
+<div>
+
+  <h2 class="featured-works text-center">Featured works</h2>
+     <!-- {{ state }} -->
+
+      <div class="portfolio-item-container">
+     <div v-for="item in state" :key="item" class="portfolio-item">
+      <img :src="item.image" alt="">
+          <p class="p-category" :class="item.category">{{ item.category }}</p>
+      <RouterLink :to="{ name:'portfoliodetails', params:{id: item.id}}">
+          <h4>{{ item.title }}</h4>
+      </RouterLink>
+          <p>{{ item.description }}</p>
+     </div>
+      </div>
+
+  </div>
+
 
 
 </div>
 </template>
 
 <script setup>
-import portfoliodb from '../modules/portfoliodb'
+import featureddb from '../modules/featureddb'
 
-const { state } = portfoliodb()
+const { state } = featureddb()
 </script>
 
 
@@ -90,6 +102,8 @@ const { state } = portfoliodb()
   font-size: 1rem;
   }
 
+  /*Button download*/
+
   .aboutme-btn {
   max-width: 255px;
   padding: 0.1rem;
@@ -111,10 +125,83 @@ const { state } = portfoliodb()
   transform: scale(1.02);
 }
 
-.portrait {
-  align-self: flex-end;
-  max-height: 150px;
+.home-portrait {
   width: auto;
+
+}
+
+/*Skills and Passions*/
+
+.home-container2 {
+  display: flex;
+  padding: 7rem 0rem;
+}
+
+div .skills-pic {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.skill-text {
+  font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #020202;
+}
+
+
+/*Featured works*/
+div img {
+  align-self: center;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.portfolio-item {
+  width: 14rem;
+  border-width: 2px 3px 4px 2px;
+  border-radius: 10px;
+  border-color: black;
+  padding: 12px;
+  margin: 4rem 0px;
+  
+}
+
+.p-category {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 3px;
+  font-family: "bd-supper", sans-serif;
+}
+
+.Web {
+  color: var(--pink-color);
+  border-left: 1px solid var(--pink-color);
+}
+
+.Video {
+  color: var(--yellow-color);
+  border-left: 1px solid var(--yellow-color);
+}
+
+.Photo {
+  color: var(--green-color);
+  border-left: 1px solid var(--green-color);
+}
+
+.Design {
+  color: var(--blue-color);
+  border-left: 1px solid var(--blue-color);
+}
+
+.Ux-Ui {
+  color: var(--orange-color);
+  border-left: 1px solid var(--orange-color);
 }
 
 </style>

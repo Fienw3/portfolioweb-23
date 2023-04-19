@@ -11,19 +11,13 @@
     <div class="about-general lg:w-3/5 md:w-3/5 sm:w-full">
     <h2>Hi im Anne-Sofie, <br> and this is everything about me.</h2>
     <h3>General information</h3>
-    <p>At vero eos et accusamus et iusto odio 
-      dignissimos ducimus qui blanditiis praesentium 
-      voluptatum deleniti atque corrupti quos dolores 
-      et quas molestias excepturi sint occaecati 
-      cupiditate non provident, similique sunt in culpa 
-      qui officia deserunt mollitia animi, id est laborum 
-      et dolorum fuga. 
-      Et harum quidem rerum facilis est et expedita 
-      distinctio. 
-      Nam libero tempore, cum soluta nobis est eligendi 
-      optio cumque nihil impedit quo minus id quod 
-      maxime placeat facere possimus, omnis voluptas assu
-      menda est, omnis dolor repellendus.</p>
+    <p>
+        Name: Anne-Sofie Walz <br>
+        Age: 23 years old <br>
+        Occupation: Currently on 2nd semester, <br>
+        studying Multimediadesign at Business Academy Southwest <br>
+        Location: Esbjerg, Denmark <br>  
+    </p>
 
       <button class="download-cv font-bold" href="http://" alt= "download button for cv" download>Download CV</button>
     </div>
@@ -35,18 +29,21 @@
 
   </div>
 
-    <div class="passionsnfuture w-full">
-      <h3>Passions and future</h3>
-        <p>em ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a cras semper. Vitae semper quis lectus nulla at volutpat diam ut. Ultricies leo integer malesuada nunc vel. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Cras sed felis eget velit aliquet. Felis eget velit aliquet sagittis id consectetur purus ut. Risus sed vulputate odio ut enim blandit. 
-            Eu non diam phasellus vestibulum. Ac tincidunt vitae semper quis lectus nulla at. '
+    <div class="future w-full">
+      <h3>Past, present and future</h3>
+        <p>
+          Im a 23 year old born and raised dane, who is currently on her 2nd semester studying multimedia design. I have a lot of passions surounding design and webdevelopment,
+          I am super passionate about the creative process from idea to the finished product, I love being a part of a team, and it brings me lots of joy to be a part of something with likeminded people.
+          I am always curious about the world around me, therefore i love meeting new people and hearing their ideas, and even better collaborating with them to create something awesome. 
+          That curiosity also plays into how im always learning new skills and researching the newest trends. <br>
 
-            Leo vel fringilla est ullamcorper. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in. Pulvinar elementum integer enim neque volutpat ac. Et malesuada fames ac turpis egestas integer eget. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec. Massa placerat duis ultricies lacus sed turpis tincidunt.
-
-            Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Commodo elit at imperdiet dui accumsan sit amet nulla. Tristique senectus et netus et malesuada fames ac turpis. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Sit amet consectetur adipiscing elit. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Euismod nisi porta lorem mollis aliquam ut. In massa tempor nec feugiat. Bibendum ut tristique et egestas quis. Sit amet purus gravida quis blandit turpis cursus in. Auctor neque vitae tempus quam pellentesque nec nam aliquam. 
-
-            Elit pellentesque habitant morbi tristique. A cras semper auctor neque vitae tempus quam pellentesque nec. Purus sit amet volutpat consequat mauris nunc congue nisi. Odio facilisis mauris sit amet massa. Nibh tellus molestie nunc non. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget. Eget mi proin sed libero enim sed faucibus. In fermentum et sollicitudin ac orci. Arcu ac tortor dignissim convallis.</p>
-    
-            <iframe class="videocv" max-width="920" max-height="615"
+          In my free time i enjoy a lot of creative and musical hobbies. I love writing poetry in a journal, and pairing it with matching artwork. I also attend a choire every week, where community is valued highly. 
+          I love talking to a lot of different people, about our joined love for music. These are the things that helps me unwind and helps me to stay creative.
+          <br>
+          In the future i want to work in one of these areas, an forever better my skills: ux/ui design, graphic design and web development. Because i love creation, in many different forms.
+        
+        </p>
+            <iframe class="videocv"
             src="https://www.youtube.com/embed/k3OH_uXeImo">
             </iframe>
     
@@ -109,7 +106,9 @@
 }
 
 .videocv {
-  padding-top: 40px;
+  margin-top: 2.5rem;
+  height: 25rem;
+  width: 40rem;
 }
 
 </style>

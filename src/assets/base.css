@@ -1,7 +1,7 @@
 
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: rgb(242, 240, 238);
+  --vt-c-white: #f2f0ee;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 
@@ -21,9 +21,14 @@
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
+
+  /*Anne-Sofie's color palette*/
   --pink-color: hsl(350, 94%, 68%);
   --yellow-color: hsl(33, 95%, 67%);
-  --babyblue-color: hsl(197, 89%, 93%);
+  --blue-color: #a0dde0;
+  --green-color: #dfdd6c;
+  --orange-color: #fe8d6f;
+  --mint-color: #9adbc5;
 }
 
 /* semantic color variables for this project */
