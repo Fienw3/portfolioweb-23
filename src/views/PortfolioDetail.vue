@@ -1,6 +1,6 @@
 <template>
 
-    <div class="detail 2xl:px-32 2xl:py-12 xl:px-32 xl:py-12 lg:px-28 lg:py-8 md:px-24 md:py-4 sm:px-8 sm:py-4">
+    <div class="detail 2xl:px-32 2xl:py-12 xl:px-32 xl:py-12 lg:px-28 lg:py-8 md:px-24 md:py-4 sm:px-8 sm:py-4 2xl:justify-between xl:justify-between lg:justify-between md:justify-center sm:justify-center">
 
         <button @click="goBack()">Back</button>
         
@@ -11,16 +11,25 @@
             <p><span>Category: </span>{{ portfolioDetails.category }}</p>
             <p><span>Date: </span>{{ portfolioDetails.date }}</p>
             <p><span>Descriptions: </span>{{ portfolioDetails.description }}</p>
-            <p>Teammembers: {{ portfolioDetails.teammembers }}</p>
+            <p><span>Teammembers: </span>{{ portfolioDetails.teammembers }}</p>
             <p><span>Tech: </span>{{ portfolioDetails.tech }}</p>
             <p><span>Complete: </span>{{ portfolioDetails.complete }}</p>
             <p><span>Link: </span><a>{{ portfolioDetails.link }}</a></p>
         </div> 
-        <div class="portfolio-img xl:w-2/5 lg:w-2/5 md:w-full sm:w-full">
+        <div class="portfolio-img xl:w-2/5 lg:w-2/5 md:w-full sm:w-full 2xl:justify-end xl:justify-end lg:justify-end md:justify-start sm:justify-start">
             <img class="" :src="portfolioDetails.image" alt="">
         </div>
-        
-       </div>
+        </div>
+
+
+        <div v-if="portfolioDetails" class="portfolioDetails w-full">
+        <div class="process-box">
+        <h3>Tasks and process</h3>
+        <p>{{ portfolioDetails.process }}</p>
+        </div>
+        </div>
+
+       
        
        <div v-else>...loading</div>
 
@@ -65,7 +74,6 @@ const portfolioDetails = computed(
 
 .portfolioDetails {
     display: flex;
-    justify-content: space-between;
 }
 
 div button {
@@ -103,6 +111,10 @@ div span {
 
 .portfolio-img{
     display: flex;
-    justify-content: flex-end;
 }
+
+.process-box {
+    padding-top: 5rem;
+}
+
 </style>

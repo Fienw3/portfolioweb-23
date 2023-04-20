@@ -11,11 +11,12 @@
 
   <div class="category-boxes sm:flex-wrap">
 
-    <button class="web-btn">Web</button>
-    <button class="video-btn">Video</button>
-    <button class="photo-btn">Photos</button>
-    <button class="design-btn">Design</button>
-    <button class="ui/ux-btn">UI/UX</button>
+    <button type="button" class="web-btn" @click="changeCategory('Web')" value="Web">Web</button>
+    <button type="button" class="video-btn" @click="changeCategory('Video')" value="Video">Video</button>
+    <button type="button" class="photo-btn" @click="changeCategory('Photo')" value="Photos">Photos</button>
+    <button type="button" class="design-btn" @click="changeCategory('Design')" value="Design">Design</button>
+    <button type="button" class="ui/ux-btn" @click="changeCategory('UX-UI')" value="UX-UI">UI/UX</button>
+    <button type="button" class="all" @click="changeCategory('All')">All</button>
 
   </div>
 
@@ -40,9 +41,37 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import portfoliodb from '../modules/portfoliodb'
 
-const { state } = portfoliodb()
+const isActive = ref(true)
+
+let { state } = portfoliodb()
+const originalState = state.value;
+
+//Filter//
+var selector
+
+function changeCategory(category) {
+  if(category !="All"){
+    selector = category
+    state.value = originalState.filter(filterFunc)
+  } else{
+    console.log("test")
+    state.value = originalState
+  }
+}
+
+var filterFunc = (item) => {
+  var category = item.category;
+
+  if(category === selector) {
+    return true;
+  } else {
+    return false;
+  };
+};
+
 </script>
 
 
@@ -60,6 +89,17 @@ const { state } = portfoliodb()
     font-size: 2rem;
     text-align: center;
     color: #020202;
+  }
+
+  div h4 {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+  }
+
+  div p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
   }
 
   .category-boxes {

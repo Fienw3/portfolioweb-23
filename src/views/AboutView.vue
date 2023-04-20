@@ -19,7 +19,7 @@
         Location: Esbjerg, Denmark <br>  
     </p>
 
-      <button class="download-cv font-bold" href="http://" alt= "download button for cv" download>Download CV</button>
+      <button class="download-cv font-bold" href="../assets/CV2023.pdf" alt= "download button for cv" download>Download CV</button>
     </div>
 
     <div class="about-photo lg:w-2/5 md:w-full sm:w-full">

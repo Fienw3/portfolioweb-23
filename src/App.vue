@@ -14,18 +14,18 @@ import { RouterLink, RouterView } from 'vue-router'
 
         <div class="nav-sitelinks lg:w-2/5 md:w-2/5 sm:w-3-5 sm:text-xs">
         <RouterLink class="home-navlink" to="/">Home</RouterLink>
-        <RouterLink class="about-navlink" to="/about">About Me</RouterLink>
+        <RouterLink class="about-navlink" to="/about">About</RouterLink>
         <RouterLink class="portfolio-navlink" to="/portfolio">Portfolio</RouterLink>
         </div>      
 
-        <div class="logo-name lg:w-1/5 md:w-1/5 sm:text-xs md:text-xs sm:invisible md:invisible">
+        <div class="logo-name lg:w-1/5 md:w-1/5 sm:text-xs md:text-xs sm:hidden md:hidden">
           <h3>Anne-Sofie Walz</h3>
         </div>
        
-        <div class="contact-box lg:w-2/5 sm:w-2/5 ">
-          <a class="linkedinicon md:invisible sm:invisible" href="https://www.linkedin.com/in/anne-sofienwalz"><img src="../src/assets/Linkedin.png" alt="LinkedIn icon that takes you to my profile"></a>
+        <div class="contact-box lg:w-2/5 sm:w-2/5">
+          <a class="linkedinicon md:invisible sm:hidden" href="https://www.linkedin.com/in/anne-sofienwalz"><img src="../src/assets/Linkedin.png" alt="LinkedIn icon that takes you to my profile"></a>
         
-          <div id="contact" class="contact sm:invisible">
+          <div id="contact" class="contact sm:hidden">
           <button class="contact-btn  sm:text-xs md:text-xs">Contact me</button>
             
         </div>
@@ -44,7 +44,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <footer>
 
-    <div class="footer-wrapper sm:invisible">
+    <div class="footer-wrapper sm:hidden">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="0000000" fill-opacity="0" d="M0,224L48,218.7C96,213,192,203,288,186.7C384,171,480,149,576,160C672,171,768,213,864,218.7C960,224,1056,192,1152,170.7C1248,149,1344,139,1392,133.3L1440,128L1440"></path>
       </svg>
@@ -162,6 +162,10 @@ nav a img:hover {
   display: flex;
   justify-content: right;
   align-items: center;
+}
+
+img {
+margin:0%
 }
 
 .contact-btn {

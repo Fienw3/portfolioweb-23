@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<div class="home 2xl:px-32 2xl:py-12 xl:px-32 xl:py-12 lg:px-28 lg:py-8 md:px-24 md:py-6 sm:px-8 sm:py-5">
+<div class="home 2xl:px-32 2xl:pt-12 xl:px-32 xl:pt-12 lg:px-28 lg:pt-8 md:px-24 md:pt-6 sm:px-8 sm:py-5">
 
   <div class="home-container1 sm:flex-wrap">
   <div class="home-about lg:w-3/5 md:w-full sm:w-full">
@@ -20,7 +20,7 @@
 
 <div class="aboutme-box columns-2">
         <RouterLink class="aboutme-btn font-bold" to="/about">Read more about me here!</RouterLink><br>
-        <a class="font-bold" href="http://" download>Download CV</a>
+        <a class="font-bold align-middle" href="../assets/CV2023.pdf" download>Download CV</a>
         </div>
 </div>
 
@@ -30,7 +30,7 @@
 
 </div>
 
-<div class="home-container2 text-center md:flex-wrap-reverse sm:flex-wrap-reverse">
+<div class="home-container2 text-center md:flex-wrap-reverse sm:flex-wrap-reverse 2xl:gap-10">
 <div class="skill-text lg:w-2/5 md:w-full sm:w-full text-justify">
   <h2>Graphic Design ★ User experience ★ Wep development ★ Graphic facilitation ★ Videography ★ Photography ★ UI design ★ Illustrations ★ Content creation ★ Cms ★</h2>
 </div>
@@ -199,7 +199,7 @@ div img {
   border-left: 1px solid var(--blue-color);
 }
 
-.Ux-Ui {
+.UX-UI {
   color: var(--orange-color);
   border-left: 1px solid var(--orange-color);
 }
