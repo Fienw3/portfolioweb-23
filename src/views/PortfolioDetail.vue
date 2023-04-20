@@ -1,21 +1,25 @@
 <template>
 
-    <div class="detail">
+    <div class="detail 2xl:px-32 2xl:py-12 xl:px-32 xl:py-12 lg:px-28 lg:py-8 md:px-24 md:py-4 sm:px-8 sm:py-4">
 
         <button @click="goBack()">Back</button>
         
-        <div v-if="portfolioDetails" class="portfolioDetails">
-           <div class="portfolio-info">
-            <p class="p-category" :class="portfolioDetails.category">{{ portfolioDetails.category }}</p>
-            <h2>{{ portfolioDetails.title }}</h2>
-            <p>{{ portfolioDetails.description }}</p>
-            <a :href="portfolioDetails.link">LinkedIn</a>
-            <span>{{ portfolioDetails.teammembers }}</span>
+        <div v-if="portfolioDetails" class="portfolioDetails md:flex-wrap sm:flex-wrap pt-16">
+            <div class="portfolio-info xl:w-3/5 lg:w-3/5 md:w-full sm:w-full">
+            <h3>General information</h3>
+            <p><span>Name: </span>{{ portfolioDetails.title }}</p>
+            <p><span>Category: </span>{{ portfolioDetails.category }}</p>
+            <p><span>Date: </span>{{ portfolioDetails.date }}</p>
+            <p><span>Descriptions: </span>{{ portfolioDetails.description }}</p>
+            <p>Teammembers: {{ portfolioDetails.teammembers }}</p>
+            <p><span>Tech: </span>{{ portfolioDetails.tech }}</p>
+            <p><span>Complete: </span>{{ portfolioDetails.complete }}</p>
+            <p><span>Link: </span><a>{{ portfolioDetails.link }}</a></p>
         </div> 
-        <div class="portfolio-img">
-            <img :src="portfolioDetails.image" alt="">
-
+        <div class="portfolio-img xl:w-2/5 lg:w-2/5 md:w-full sm:w-full">
+            <img class="" :src="portfolioDetails.image" alt="">
         </div>
+        
        </div>
        
        <div v-else>...loading</div>
@@ -56,7 +60,12 @@ const portfolioDetails = computed(
     min-height: 100vh;
     display: flex-start;
     align-items: center;
-    padding: 3rem 1.875rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.portfolioDetails {
+    display: flex;
+    justify-content: space-between;
 }
 
 div button {
@@ -71,6 +80,17 @@ div button {
   font-family: 'Courier New', Courier, monospace;
 }
 
+h3 {
+    color: black;
+    display: flex;
+    font-weight: bold;
+    font-family: "bd-supper", sans-serif;
+}
+
+div span {
+    font-weight: bold;
+}
+
 .portfolio-item-container {
     display: flex;
 }
@@ -81,20 +101,8 @@ div button {
     padding: 10px;
 }
 
-.p-category {
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.Web {
-  color: var(--pink-color);
-  border-left: 1px solid var(--pink-color);
-  padding-left: 3px;
-}
-
-.Video {
-  color: var(--yellow-color);
-  border-left: 1px solid var(--yellow-color);
-  padding-left: 3px;
+.portfolio-img{
+    display: flex;
+    justify-content: flex-end;
 }
 </style>

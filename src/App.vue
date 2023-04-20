@@ -7,27 +7,27 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <header>
     
-    <div class="nav-wrapper">
+    <div class="nav-wrapper2 2xl:px-32 2xl:py-5 xl:px-32 xl:py-5 lg:px-28 lg:py-5 md:px-24 md:py-4 sm:px-8 sm:py-4">
       
 
     <nav>
 
-        <div class="nav-sitelinks lg:w-2/5 md:w-2/5">
+        <div class="nav-sitelinks lg:w-2/5 md:w-2/5 sm:w-3-5 sm:text-xs">
         <RouterLink class="home-navlink" to="/">Home</RouterLink>
         <RouterLink class="about-navlink" to="/about">About Me</RouterLink>
         <RouterLink class="portfolio-navlink" to="/portfolio">Portfolio</RouterLink>
         </div>      
 
-        <div class="logo-name lg:w-1/5 md:w-1/5 sm:text-xs md:text-xs sm:invisible">
+        <div class="logo-name lg:w-1/5 md:w-1/5 sm:text-xs md:text-xs sm:invisible md:invisible">
           <h3>Anne-Sofie Walz</h3>
         </div>
        
-        <div class="contact-box lg:w-2/5 ">
-          <a class="linkedinicon sm:invisible" href="https://www.linkedin.com/in/anne-sofienwalz"><img src="../src/assets/Linkedin.png" alt="LinkedIn icon that takes you to my profile"></a>
+        <div class="contact-box lg:w-2/5 sm:w-2/5 ">
+          <a class="linkedinicon md:invisible sm:invisible" href="https://www.linkedin.com/in/anne-sofienwalz"><img src="../src/assets/Linkedin.png" alt="LinkedIn icon that takes you to my profile"></a>
         
-          <div id="contact" class="contact">
+          <div id="contact" class="contact sm:invisible">
           <button class="contact-btn  sm:text-xs md:text-xs">Contact me</button>
-
+            
         </div>
       </div>
       </nav>
@@ -44,7 +44,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <footer>
 
-    <div class="footer-wrapper">
+    <div class="footer-wrapper sm:invisible">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="0000000" fill-opacity="0" d="M0,224L48,218.7C96,213,192,203,288,186.7C384,171,480,149,576,160C672,171,768,213,864,218.7C960,224,1056,192,1152,170.7C1248,149,1344,139,1392,133.3L1440,128L1440"></path>
       </svg>
@@ -101,16 +101,15 @@ header {
   max-height: 110vh;
   position: sticky;
   width: 100%;
-  
+  box-shadow: 0px 0px 3px 0px;
+  background-color: #F2f2f2;
 }
 
 header .nav-wrapper {
     display: flex;
     flex-wrap: wrap;
     position: sticky;
-    background-color: #F2f2f2;
-    box-shadow: 0px 0px 3px 0px;
-    padding: 1rem 6rem 1rem 6rem;
+    width: 100%;
   }
 
 nav  {
@@ -118,8 +117,6 @@ nav  {
   text-align: center;
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
-  
 }
 
 .nav-sitelinks {
@@ -188,9 +185,6 @@ nav a img:hover {
 
 /*Footer*/
 
-.footer-wrapper {
-  height: 25rem;
-}
 
 path {
   stroke: #000000;
@@ -198,7 +192,7 @@ path {
 }
 
 .footer-grid-container {
-padding: 0px 6rem 3rem 6rem;
+padding: 0px 8rem 3rem 8rem;
 }
 
 .footer-grid {

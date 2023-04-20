@@ -3,10 +3,10 @@
 </script>
 
 <template>
-<div class="home">
+<div class="home 2xl:px-32 2xl:py-12 xl:px-32 xl:py-12 lg:px-28 lg:py-8 md:px-24 md:py-6 sm:px-8 sm:py-5">
 
   <div class="home-container1 sm:flex-wrap">
-  <div class="home-about lg:w-3/5 md:w-3/5 sm:w-full">
+  <div class="home-about lg:w-3/5 md:w-full sm:w-full">
     
     <h2>Hi! My name is  Anne-Sofie, <br>
       and welcome to my creative universe.</h2>
@@ -24,7 +24,7 @@
         </div>
 </div>
 
-  <div class="home-portrait lg:w-2/5 md:w-2/5 sm:w-full">
+  <div class="home-portrait lg:w-2/5 md:w-full sm:w-full sm:text-sm">
       <img class="portrait" src="../assets/Portraitforweb.jpg" alt="Portrait of Anne-Sofie">
   </div>
 
@@ -32,7 +32,7 @@
 
 <div class="home-container2 text-center md:flex-wrap-reverse sm:flex-wrap-reverse">
 <div class="skill-text lg:w-2/5 md:w-full sm:w-full text-justify">
-  <h2>Graphic Design ★ User experience ★ Wep development ★ Graphic faciliation ★ Videography ★ Photography ★ UI design ★ Illustrations </h2>
+  <h2>Graphic Design ★ User experience ★ Wep development ★ Graphic facilitation ★ Videography ★ Photography ★ UI design ★ Illustrations ★ Content creation ★ Cms ★</h2>
 </div>
 <div class="skills-pic lg:w-3/5 md:w-full sm:w-full">
   <img width="700" height="500" src="../assets/skillsnpassions.png" alt="Characters representing skills and passions">
@@ -74,11 +74,11 @@ const { state } = featureddb()
   .home {
     min-height: 100vh;
     display: flex-start;
-    padding: 3rem 6rem;
   }
 
   .home-container1 {
     display: flex;
+    justify-content: space-between;
   }
 
   div h2 {

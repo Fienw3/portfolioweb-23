@@ -3,12 +3,12 @@
 </script>
 
 <template>
-  <div class="about">
+  <div class="about 2xl:px-32 2xl:py-12 xl:px-32 xl:py-12 lg:px-28 lg:py-8 md:px-24 md:py-6 sm:px-8 sm:py-5">
 
-  <div class="about-container1 sm:flex-wrap">
+  <div class="about-container1 sm:flex-wrap md:flex-wrap">
 
     
-    <div class="about-general lg:w-3/5 md:w-3/5 sm:w-full">
+    <div class="about-general lg:w-3/5 md:w-full sm:w-full">
     <h2>Hi im Anne-Sofie, <br> and this is everything about me.</h2>
     <h3>General information</h3>
     <p>
@@ -22,7 +22,7 @@
       <button class="download-cv font-bold" href="http://" alt= "download button for cv" download>Download CV</button>
     </div>
 
-    <div class="about-photo lg:w-2/5 md:w-2/5 sm:w-full">
+    <div class="about-photo lg:w-2/5 md:w-full sm:w-full">
       <img class="portrait" src="../assets/Portraitforweb.jpg" alt="Portrait of Anne-Sofie">
 
     </div> 
@@ -56,11 +56,12 @@
   .about {
     min-height: 100vh;
     display: flex-start;
-    padding: 3rem 6rem;
+    max-width: fit-content;
   }
 
   .about-container1 {
     display: flex;
+    justify-content: space-between;
   }
 
   div h2 {
@@ -81,6 +82,7 @@
     font-family: "bd-supper", sans-serif;
     padding-top: 32px;
     font-size: 1rem;
+    color: #020202;
   }
 
   .download-cv {

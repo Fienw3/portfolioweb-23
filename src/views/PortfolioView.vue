@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="portfolio">
+  <div class="portfolio 2xl:px-32 2xl:py-12 xl:px-32 xl:py-12 lg:px-28 lg:py-8 md:px-24 md:py-6 sm:px-8 sm:py-5">
 
   <div class="portfolio-header">
     <h2>Anne-Sofie's Portfolio</h2>
@@ -50,9 +50,8 @@ const { state } = portfoliodb()
 <style scoped>
 
   .portfolio {
-    min-height: 100vh;
+    min-height: fit-content;
     display: flex-start;
-    padding: 3rem 6rem;
   }
  
   div h2 {
