@@ -5,8 +5,8 @@
 <template>
 <div class="home 2xl:px-32 2xl:pt-12 xl:px-32 xl:pt-12 lg:px-28 lg:pt-8 md:px-24 md:pt-6 sm:px-8 sm:py-5">
 
-  <div class="home-container1 sm:flex-wrap">
-  <div class="home-about lg:w-3/5 md:w-full sm:w-full">
+  <div class="home-container1 sm:flex-wrap md:flex-wrap gap-5">
+  <div class="home-about 2xl:w-3/5 xl:w-3/5 lg:w-3/5 md:w-full sm:w-full">
     
     <h2>Hi! My name is  Anne-Sofie, <br>
       and welcome to my creative universe.</h2>
@@ -18,23 +18,23 @@
       In the future i want to work in one of these areas, an forever better my skills: ux/ui design, grafic design and web development.</p>
 
 
-<div class="aboutme-box columns-2">
+<div class="aboutme-box columns-2 sm:flex-wrap sm:text-xs">
         <RouterLink class="aboutme-btn font-bold" to="/about">Read more about me here!</RouterLink><br>
         <a class="font-bold align-middle" href="../assets/CV2023.pdf" download>Download CV</a>
         </div>
 </div>
 
-  <div class="home-portrait lg:w-2/5 md:w-full sm:w-full sm:text-sm">
+  <div class="home-portrait 2xl:w-2/5 xl:w-2/5 lg:w-2/5 md:w-full sm:w-full sm:text-sm justify-end md:justify-start sm:justify-start">
       <img class="portrait" src="../assets/Portraitforweb.jpg" alt="Portrait of Anne-Sofie">
   </div>
 
 </div>
 
-<div class="home-container2 text-center md:flex-wrap-reverse sm:flex-wrap-reverse 2xl:gap-10">
-<div class="skill-text lg:w-2/5 md:w-full sm:w-full text-justify">
-  <h2>Graphic Design ★ User experience ★ Wep development ★ Graphic facilitation ★ Videography ★ Photography ★ UI design ★ Illustrations ★ Content creation ★ Cms ★</h2>
+<div class="home-container2 text-center lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse 2xl:gap-10">
+<div class="skill-text 2xl:w-2/5 xl:2-3/5 lg:w-full md:w-full sm:w-full text-justify sm:text-md lg:text-md">
+  <h2>Graphic Design ★ User experience ★ Web development ★ Graphic facilitation ★ Poetry ★ Videography ★ UI design ★ Photography ★ Illustrations ★ Content creation ★ </h2>
 </div>
-<div class="skills-pic lg:w-3/5 md:w-full sm:w-full">
+<div class="skills-pic 2xl:w-3/5 xl:w-3/5 lg:w-full md:w-full sm:w-full">
   <img width="700" height="500" src="../assets/skillsnpassions.png" alt="Characters representing skills and passions">
 </div>
 </div>
@@ -127,6 +127,7 @@ const { state } = featureddb()
 
 .home-portrait {
   width: auto;
+  display: flex;
 
 }
 

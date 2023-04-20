@@ -53,7 +53,7 @@ const getPortfolio = () => {
             title: 'Nuddel promo video',
             description: 'A promo video for Cup Noodles',
             image: '../src/assets/img/Noodle.jpg',
-            video:'../src/assets/video/Noodle-video.mp4',
+            video:'https://youtube.com/shorts/JON6C0CkUfc?feature=share',
             link: 'https://erhvervsakademisydvest-my.sharepoint.com/:v:/g/personal/albtor01_easv365_dk/ERKY8IDKivVHtwW7N9XCrkUBeloQDQCAEtv1GCIFfMxbgQ?e=ocafdi',
             category: 'Video',
             tech: 'Adobe Premiere Pro, Adobe AfterEffects',

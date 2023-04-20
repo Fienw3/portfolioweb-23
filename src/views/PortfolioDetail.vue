@@ -5,7 +5,7 @@
         <button @click="goBack()">Back</button>
         
         <div v-if="portfolioDetails" class="portfolioDetails md:flex-wrap sm:flex-wrap pt-16">
-            <div class="portfolio-info xl:w-3/5 lg:w-3/5 md:w-full sm:w-full">
+            <div class="portfolio-info xl:w-3/5 lg:w-3/5 md:w-full sm:w-full sm:text-sm">
             <h3>General information</h3>
             <p><span>Name: </span>{{ portfolioDetails.title }}</p>
             <p><span>Category: </span>{{ portfolioDetails.category }}</p>
@@ -16,20 +16,19 @@
             <p><span>Complete: </span>{{ portfolioDetails.complete }}</p>
             <p><span>Link: </span><a>{{ portfolioDetails.link }}</a></p>
         </div> 
-        <div class="portfolio-img xl:w-2/5 lg:w-2/5 md:w-full sm:w-full 2xl:justify-end xl:justify-end lg:justify-end md:justify-start sm:justify-start">
-            <img class="" :src="portfolioDetails.image" alt="">
+        <div class="portfolio-img-box xl:w-2/5 lg:w-2/5 md:w-full sm:w-full 2xl:justify-end xl:justify-end lg:justify-end md:justify-start sm:justify-start">
+            <img class="portfolio-img" :src="portfolioDetails.image" alt="">
         </div>
         </div>
 
 
-        <div v-if="portfolioDetails" class="portfolioDetails w-full">
+        <div v-if="portfolioDetails" class="portfolioDetails w-full sm:text-sm">
         <div class="process-box">
         <h3>Tasks and process</h3>
         <p>{{ portfolioDetails.process }}</p>
         </div>
         </div>
-
-       
+        
        
        <div v-else>...loading</div>
 
@@ -109,8 +108,12 @@ div span {
     padding: 10px;
 }
 
-.portfolio-img{
+.portfolio-img-box{
     display: flex;
+}
+
+img{
+    scale: 140%;
 }
 
 .process-box {

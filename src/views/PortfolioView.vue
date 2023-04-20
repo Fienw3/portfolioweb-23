@@ -9,7 +9,7 @@
     <h2>Anne-Sofie's Portfolio</h2>
   </div>
 
-  <div class="category-boxes sm:flex-wrap">
+  <div class="category-boxes sm:flex-wrap md:flex-wrap">
 
     <button type="button" class="web-btn" @click="changeCategory('Web')" value="Web">Web</button>
     <button type="button" class="video-btn" @click="changeCategory('Video')" value="Video">Video</button>

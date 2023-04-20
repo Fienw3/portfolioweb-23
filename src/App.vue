@@ -51,7 +51,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 
       <div class="footer-grid-container">
-      <div class="footer-grid grid-cols-4">
+      <div class="footer-grid grid-cols-4 md:gap-5">
         <div class="col-1">
           <h3>Contact me</h3>
           <p>+45 30742921 <br>
