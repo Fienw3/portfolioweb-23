@@ -17,8 +17,8 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink class="portfolio-navlink" to="/portfolio">Portfolio</RouterLink>
         </div>      
 
-        <div class="blankspace lg:w-1/5 md:w-1/5 sm:text-xs md:text-xs sm:hidden md:hidden">
-          
+        <div class="blankspace lg:w-1/5 md:w-1/5 sm:text-xs md:text-xs sm:hidden md:hidden align-middle">
+          <h1 class="align-middle">Anne-Sofie Walz</h1>
         </div>
        
         <div class="contact-box lg:w-2/5 sm:w-2/5">
@@ -71,9 +71,9 @@ import { RouterLink, RouterView } from 'vue-router'
         </div>
         <div class="col-4">
           <h3>Navigate</h3>
-          <RouterLink class="home-navlink" to="/">Home</RouterLink><br>
-          <RouterLink class="about-navlink" to="/about">About Me</RouterLink><br>
-          <RouterLink class="portfolio-navlink" to="/portfolio">Portfolio</RouterLink>
+          <RouterLink class="home-navlink underline" to="/">Home</RouterLink><br>
+          <RouterLink class="about-navlink underline" to="/about">About Me</RouterLink><br>
+          <RouterLink class="portfolio-navlink underline" to="/portfolio">Portfolio</RouterLink>
         </div>
       </div>
     </div>
@@ -188,6 +188,19 @@ margin:0%
   padding: 0.0625px 0.19rem;
 }
 
+div h1 {
+  font-family: "bd-supper", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.blankspace {
+  display: flex;
+  align-items: center;
+}
+
+
 /*Footer*/
 
 
@@ -208,7 +221,7 @@ padding: 0px 8rem 3rem 8rem;
 .footer-grid h3{
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .footer-grid p{
   font-family: 'Courier New', Courier, monospace;

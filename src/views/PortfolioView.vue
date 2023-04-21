@@ -89,6 +89,7 @@ var filterFunc = (item) => {
     font-size: 2rem;
     text-align: center;
     color: #020202;
+    padding-bottom: 2rem;
   }
 
   div h4 {
@@ -147,8 +148,8 @@ div img {
   border-width: 2px 3px 4px 2px;
   border-radius: 10px;
   border-color: black;
-  padding: 12px;
-  margin-bottom: 35px;
+  padding-top: 12px;
+  margin: 2rem;
   
 }
 
