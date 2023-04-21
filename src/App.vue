@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-
 </script>
 
 <template>
@@ -10,7 +9,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="nav-wrapper2 2xl:px-32 2xl:py-5 xl:px-32 xl:py-5 lg:px-28 lg:py-5 md:px-24 md:py-4 sm:px-8 sm:py-4">
       
 
-    <nav>
+    <nav class="">
 
         <div class="nav-sitelinks lg:w-2/5 md:w-2/5 sm:w-3-5 sm:text-xs">
         <RouterLink class="home-navlink" to="/">Home</RouterLink>
@@ -18,16 +17,17 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink class="portfolio-navlink" to="/portfolio">Portfolio</RouterLink>
         </div>      
 
-        <div class="logo-name lg:w-1/5 md:w-1/5 sm:text-xs md:text-xs sm:hidden md:hidden">
-          <h3>Anne-Sofie Walz</h3>
+        <div class="blankspace lg:w-1/5 md:w-1/5 sm:text-xs md:text-xs sm:hidden md:hidden">
+          
         </div>
        
         <div class="contact-box lg:w-2/5 sm:w-2/5">
           <a class="linkedinicon md:invisible sm:hidden" href="https://www.linkedin.com/in/anne-sofienwalz"><img src="../src/assets/Linkedin.png" alt="LinkedIn icon that takes you to my profile"></a>
         
           <div id="contact" class="contact sm:hidden">
-          <button class="contact-btn  sm:text-xs md:text-xs">Contact me</button>
-            
+            <form method="get" action="#footer">
+          <button class="contact-btn sm:text-xs md:text-xs">Contact me</button>
+            </form>
         </div>
       </div>
       </nav>
@@ -51,7 +51,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 
       <div class="footer-grid-container">
-      <div class="footer-grid grid-cols-4 md:gap-5">
+      <div id="footer" class="footer-grid grid-cols-4 md:gap-5">
         <div class="col-1">
           <h3>Contact me</h3>
           <p>+45 30742921 <br>
@@ -90,18 +90,19 @@ import { RouterLink, RouterView } from 'vue-router'
 
 
 
-
 <style scoped>
 
 /* BD Supper adobe-font import */
 @import url("https://use.typekit.net/vyo8bsa.css");
 
+html { scroll-behavior: smooth;}
+
 header {
   line-height: 1.5;
   max-height: 110vh;
-  position: sticky;
   width: 100%;
-  box-shadow: 0px 0px 3px 0px;
+  border-bottom: 2px solid #000000;
+  /* box-shadow: 0px 0px 3px 0px; */
   background-color: #F2f2f2;
 }
 
@@ -192,7 +193,7 @@ margin:0%
 
 path {
   stroke: #000000;
-  stroke-width: 3px;
+  stroke-width: 2px;
 }
 
 .footer-grid-container {

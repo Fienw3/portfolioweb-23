@@ -20,7 +20,7 @@
 
 <div class="aboutme-box columns-2 sm:flex-wrap sm:text-xs">
         <RouterLink class="aboutme-btn font-bold" to="/about">Read more about me here!</RouterLink><br>
-        <a class="font-bold align-middle" href="../assets/CV2023.pdf" download>Download CV</a>
+        <a class="font-bold align-middle" href="https://erhvervsakademisydvest-my.sharepoint.com/:b:/g/personal/annwal01_easv365_dk/EfZ_OPx6-nRKj2Pb8urT1pUB2qOY4BEHzbunuUZcTpbZ1A?e=Fyfw4I" alt="button that links to cv on onedrive">Download CV</a>
         </div>
 </div>
 
@@ -100,6 +100,7 @@ const { state } = featureddb()
   color: black;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
+  align-items: center;
   }
 
   /*Button download*/

@@ -18,11 +18,14 @@
         <span>Occupation:</span> Currently on 2nd semester, <br>
         studying Multimediadesign at Business Academy Southwest <br>
         <span>Location:</span> Esbjerg, Denmark <br>  
-        <span>Email:</span> annwal01@easv365.dk or Fiewalz@yahoo.dk
+        <span>Email:</span> annwal01@easv365.dk or Fiewalz@yahoo.dk <br>
+        <span>LinkedIn:</span> www.linkedin.com/in/anne-sofienwalz
+
+
     </p>
   </div>
 
-      <button class="download-cv font-bold" href="../assets/CV2023.pdf" alt= "download button for cv" download>Download CV</button>
+      <button class="download-cv font-bold" href="https://erhvervsakademisydvest-my.sharepoint.com/:b:/g/personal/annwal01_easv365_dk/EfZ_OPx6-nRKj2Pb8urT1pUB2qOY4BEHzbunuUZcTpbZ1A?e=Fyfw4I" alt="button that links to cv on onedrive">Download CV</button>
     </div>
 
     <div class="about-photo 2xl:w-2/5 xl:w-2/5 lg:w-full md:w-full sm:w-full justify-end md:justify-start sm:justify-start">
@@ -48,7 +51,7 @@
         </p>
 
         <div class="video-box"></div>
-            <iframe class="videocv"
+            <iframe class="videocv" 
             src="https://www.youtube.com/embed/k3OH_uXeImo">
             </iframe>
         </div>
@@ -74,7 +77,6 @@
 
   div h2 {
     font-family: "bd-supper", sans-serif;
-    font-size: 30px;
     color: #020202;
     font-size: 2rem;
   }
@@ -89,7 +91,7 @@
   .about h3 {
     font-weight: bold;
     font-family: "bd-supper", sans-serif;
-    padding-top: 32px;
+    padding-top: 28px;
     font-size: 1rem;
     color: #020202;
   }
@@ -122,14 +124,42 @@
 
 .video-box {
   margin-top: 2.5rem;
-
 }
 
-.videocv iframe{
-height: 100%;
-width: 100%
-
+@media screen and (max-width: 1535px) {
+  
+.videocv{
+height: 300px;
+width: 500px;
 }
 
+};
+
+@media screen and (max-width: 700px) {
+  
+  .videocv{
+  height: 200px;
+  width: 400px;
+  }
+  
+};
+
+@media screen and (max-width: 600px) {
+  
+  .videocv{
+  height: 250px;
+  width: 350px;
+  }
+  
+};
+
+@media screen and (max-width: 500px) {
+  
+  .videocv{
+  height: 150px;
+  width: 250px;
+  }
+  
+};
 
 </style>

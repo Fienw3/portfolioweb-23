@@ -5,7 +5,7 @@ const getPortfolio = () => {
         {
             id: 1,
             title: 'Bliv bloddoner - NGO',
-            description: 'Re-branding of the NGO blivbloddoner.dk',
+            description: 'Re-branding of the NGO blivbloddoner.dk.',
             image: "../src/assets/img/Bloddoner.jpg",
             video:'',
             link: 'https://erhvervsakademisydvest-my.sharepoint.com/:f:/g/personal/tanhan01_easv365_dk/Evwc9xjaVh5JgjHkQD7008kBH2THbDK9Lzontklq2ZiSVg?e=PyNVEG',
@@ -20,7 +20,7 @@ const getPortfolio = () => {
         {
             id: 2,
             title: 'Beyond Ebjerg',
-            description: 'Creating a event with branding for Esbjerg',
+            description: 'Creating a event with branding for Esbjerg.',
             image: '../src/assets/img/Beyond.jpg',
             video:'',
             link: 'https://erhvervsakademisydvest-my.sharepoint.com/:f:/g/personal/annwal01_easv365_dk/EmYS3Lxi7GVJhZU1yspmq50BEIMCgPKoibr4U4pBX-HWtw?e=DmvpT7',
@@ -36,10 +36,10 @@ const getPortfolio = () => {
         {
             id: 3,
             title: 'BioVers',
-            description: 'A concept of a new thinking cinema app',
+            description: 'A concept of a new thinking cinema app.',
             image: '../src/assets/img/Cinema.jpg',
             video:'',
-            link: 'https://erhvervsakademisydvest-my.sharepoint.com/:f:/g/personal/tanhan01_easv365_dk/EsV7p_P7V-dMrvPXRs58kH4BwQzhMx2x90okcncK0Qlbsw?e=PHcZGM',
+            link: 'https://erhvervsakademisydvest-my.sharepoint.com/:f:/g/personal/tanhan01_easv365_dk/EsV7p_P7V-dMrvPXRs58kH4BzgKamcfms5ptPX76VIIpjQ',
             category: 'UX-UI',
             tech: 'Adobe XD, Adobe Illustrator, Miro',
             date: "February 23rd",
@@ -51,7 +51,7 @@ const getPortfolio = () => {
         {
             id: 4,
             title: 'Nuddel promo video',
-            description: 'A promo video for Cup Noodles',
+            description: 'A promo video for Cup Noodles.',
             image: '../src/assets/img/Noodle.jpg',
             video:'https://youtube.com/shorts/JON6C0CkUfc?feature=share',
             link: 'https://erhvervsakademisydvest-my.sharepoint.com/:v:/g/personal/albtor01_easv365_dk/ERKY8IDKivVHtwW7N9XCrkUBeloQDQCAEtv1GCIFfMxbgQ?e=ocafdi',
@@ -67,7 +67,7 @@ const getPortfolio = () => {
         {
             id: 5, 
             title: 'Longhorn BBQ competition',
-            description: 'Website and branding for a BBQ competition',
+            description: 'Website and branding for a BBQ competition.',
             image: '../src/assets/img/Viking.jpg',
             video: '../src/assets/video/BBQ-movie.mp4',
             link: 'https://erhvervsakademisydvest-my.sharepoint.com/:f:/g/personal/annwal01_easv365_dk/EpMS3disejdMqQvW-rL6eeIB6nxqWlUJW9HfFeHLcohKFQ?e=2iatO3',
@@ -83,7 +83,7 @@ const getPortfolio = () => {
         {
             id: 6, 
             title: 'Workex',
-            description: 'Creating an app, with ux in mind',
+            description: 'Creating an app, with ux in mind.',
             image: '../src/assets/img/Workex.jpg',
             video: '',
             link: 'https://erhvervsakademisydvest-my.sharepoint.com/:f:/g/personal/annwal01_easv365_dk/Eq0Qbt7qd75HscOOHWjKpesBYg9AkQsrSG-vBqITz4EVeQ?e=j9gJHB',
@@ -100,7 +100,7 @@ const getPortfolio = () => {
         {
             id: 7, 
             title: 'Esbjerg after dark',
-            description: 'Photo competition, where subject was own coice',
+            description: 'Photo competition, where subject was own choice.',
             image: '../src/assets/img/Esbjerg.jpg',
             video: '',
             link: 'https://erhvervsakademisydvest-my.sharepoint.com/:i:/g/personal/annwal01_easv365_dk/EbjD6PidMuBHqTTIYMKujTkBPc7bPVIFurvq1DhxmiXZFg?e=vWvjDe',

@@ -28,7 +28,18 @@ const router = createRouter({
       component: () => import('../views/PortfolioDetail.vue'),
       props: true
     }
-  ]
+  ],
+  
+  
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    }
+    if (to.hash) {
+      return { el: to.hash };
+    }
+    return { x: 0, y: 0 };
+  }
 })
 
 export default router
