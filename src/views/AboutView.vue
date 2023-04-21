@@ -83,7 +83,7 @@
 
   div p {
     font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     color: #020202;
   }
   
@@ -104,7 +104,7 @@
   margin: 0.625rem 0px 1rem 0px;
   max-width: 255px;
   padding: 0.1rem 0.3rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "bd-supper", sans-serif;
   border-width: 2px 3px 4px 2px;
   border-radius: 10px;
   border-color: black;

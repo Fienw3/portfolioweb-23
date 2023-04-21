@@ -18,10 +18,9 @@ import { RouterLink, RouterView } from 'vue-router'
         </div>      
 
         <div class="blankspace lg:w-1/5 md:w-1/5 sm:text-xs md:text-xs sm:hidden md:hidden align-middle">
-          <h1 class="align-middle">Anne-Sofie Walz</h1>
         </div>
        
-        <div class="contact-box lg:w-2/5 sm:w-2/5">
+        <div class="contact-box lg:w-2/5 sm:w-2/5 md:hidden sm:hidden">
           <a class="linkedinicon md:invisible sm:hidden" href="https://www.linkedin.com/in/anne-sofienwalz"><img src="../src/assets/Linkedin.png" alt="LinkedIn icon that takes you to my profile"></a>
         
           <div id="contact" class="contact sm:hidden">
@@ -139,7 +138,7 @@ nav a {
   color: black;
   display: flex;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav a:first-of-type{
@@ -184,7 +183,7 @@ margin:0%;
   radial-gradient(at 15% 85%, hsla(187,88%,74%,1) 0px, transparent 50%);
   color: black;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0.0625px 0.19rem;
 }
 
@@ -220,11 +219,12 @@ padding: 0px 8rem 3rem 8rem;
 
 .footer-grid h3{
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
+  color: #000000;
 }
 .footer-grid p{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
 

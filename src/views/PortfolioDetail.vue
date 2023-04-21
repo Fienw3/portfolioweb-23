@@ -68,7 +68,7 @@ const portfolioDetails = computed(
     min-height: 100vh;
     display: flex-start;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .portfolioDetails {
@@ -79,12 +79,12 @@ div button {
   width: 85px;
   border-width: 2px 3px 4px 2px;
   border-radius: 7px;
-  border-color: black;
+  border-color: #020202;
   background: rgb(222,244,253);
   background: linear-gradient(356deg, rgba(222,244,253,1) 34%, rgba(249,99,124,0.8661589635854342) 100%, rgba(242,242,242,1) 100%);
-  color: black;
+  color: #020202;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {

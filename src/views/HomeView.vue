@@ -88,7 +88,7 @@ const { state } = featureddb()
   }
 
   .about-home {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: #020202;
   }
@@ -98,7 +98,7 @@ const { state } = featureddb()
   display: flex;
   font-weight: bold;
   color: black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   align-items: center;
   }
@@ -145,7 +145,7 @@ div .skills-pic {
 }
 
 .skill-text {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: #020202;
 }
@@ -179,6 +179,10 @@ div img {
   font-weight: 700;
   padding-left: 3px;
   font-family: "bd-supper", sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .Web {

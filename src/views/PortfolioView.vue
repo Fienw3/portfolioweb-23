@@ -94,12 +94,12 @@ var filterFunc = (item) => {
 
   div h4 {
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "bd-supper", sans-serif;
     font-size: 0.8rem;
   }
 
   div p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
   }
 
@@ -115,7 +115,7 @@ div button {
   font-size: 1rem;
   border-width: 2px 3px 4px 2px;
   border-radius: 10px;
-  border-color: black;
+  border-color: #020202;
   background-color:hsla(339,0%,100%,1);
   background-image:
   radial-gradient(at 24% 54%, hsla(33,95%,67%,1) 0px, transparent 50%),
@@ -124,9 +124,9 @@ div button {
   radial-gradient(at 84% 21%, hsla(187,88%,74%,1) 0px, transparent 50%),
   radial-gradient(at 37% 9%, hsla(344,82%,76%,1) 0px, transparent 50%),
   radial-gradient(at 15% 85%, hsla(187,88%,74%,1) 0px, transparent 50%);
-  color: black;
+  color: #020202;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0.1px 0.19rem;
   margin-bottom: 1rem;
 }

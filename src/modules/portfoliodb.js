@@ -19,7 +19,7 @@ const getPortfolio = () => {
         },
         {
             id: 2,
-            title: 'Beyond Ebjerg',
+            title: 'Beyond Esbjerg',
             description: 'Creating a event with branding for Esbjerg.',
             image: '../src/assets/img/Beyond.jpg',
             video:'',
