@@ -166,7 +166,7 @@ nav a img:hover {
 }
 
 img {
-margin:0%
+margin:0%;
 }
 
 .contact-btn {
